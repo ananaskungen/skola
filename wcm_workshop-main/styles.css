@@ -276,12 +276,15 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
   grid-template-rows: 70% 30%;
-  border: 1px solid black;
   height: 200px;
   margin-bottom: 9.6rem;
-  background-color: #fff8f2;
+  background-color: #fbf2ea;
   padding-left: 2rem;
   column-gap: 1.2rem;
+}
+
+.multiple-link-list:last-child {
+  background-color: #fbf2ea;
 }
 
 .li-betala {
@@ -340,4 +343,14 @@ p {
 .företag-blå {
   color: #257886;
   font-weight: bold;
+  padding-left: 0.5rem;
+}
+
+.background {
+  background-color: #fff8f2;
+  padding-left: 0.5rem;
+}
+
+.bet {
+  padding-top: 1.2rem;
 }
