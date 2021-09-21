@@ -225,6 +225,7 @@ p {
 .grid-col-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   height: 400px;
   column-gap: 1.2rem;
   margin-bottom: 8.6rem;
@@ -353,4 +354,144 @@ p {
 
 .bet {
   padding-top: 1.2rem;
+}
+
+/*********************/
+/*  Mugera   */
+/*********************/
+
+.m1 {
+  background-color: #ebf8f2;
+  width: 100%;
+  padding: 1rem;
+}
+
+.m2 {
+  background-color: #ebf8f2;
+  width: 100%;
+  padding: 1rem;
+}
+
+.m3 {
+  background-color: #ebf8f2;
+  width: 100%;
+  padding: 1rem;
+}
+
+.grid-col-555 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+
+  height: 200px;
+  margin-bottom: 9.6rem;
+}
+
+.orange {
+  color: #f35b1c;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.brown {
+  color: #512b2b;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.coronatext {
+  margin-top: 0.5rem;
+}
+
+.tipsp {
+  color: #257886;
+}
+
+.tipsf {
+  display: block;
+  color: #257886;
+}
+
+.dÃ¤rfÃ¶r {
+  color: #512b2b;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.lagen {
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+.dÃ¤rfÃ¶rstÃ¤llervifrÃ¥gor {
+  color: #257886;
+}
+
+.hÃ¥llbara {
+  color: #512b2b;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.vijobbar {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.hÃ¥llbarhet {
+  color: #257886;
+}
+
+.footer {
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+  border-top: 10px solid orange;
+
+  background-color: #fbf2ea;
+
+  margin-bottom: 9.6rem;
+}
+
+.grid-col-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  height: 400px;
+  width: 100%;
+
+  column-gap: 1.2rem;
+  padding: 1rem;
+}
+
+.li-class {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  padding: 0.3rem 0;
+}
+
+.span-class {
+  display: inline-block;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  margin-bottom: 1.2rem;
+}
+
+.select-where {
+  padding-left: 2rem;
+  margin-: 2rem;
+}
+
+.span-class-tvÃ¥ {
+  display: inline-block;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
 }
