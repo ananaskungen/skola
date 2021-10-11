@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Armin Inc</title>
-  
+    <title>Blog</title>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <script src="script.js"></script>
-  
-  
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -28,32 +30,25 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
 
-  
     <script
       defer
       src="// https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
     "
     ></script>
-
-
-  
   </head>
-
   <body>
     <header class="header">
       <a href="index.html">
 
         <img class="logo" src="logo.png" alt="some logo"/>
       </a>
+
       <nav class="main-nav">
-      <ul class="main-nav-list">
+        <ul class="main-nav-list">
           <li><a class="main-nav-link" href="galleri.html">Galleri</a></li>
           <li><a class="main-nav-link" href="kontakt.html">Contact</a></li>
-          <li><a class="main-nav-link" href="blog.html">Blog</a></li>
           <li><a class="main-nav-link" href="about.html">Om Mig</a></li>
-      
-      
-        </ul>        
+        </ul>
       </nav>
 
       <div class="topnav">
@@ -61,8 +56,7 @@
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
           <a class="a-tag" href="galleri.html">Galleri</a>
-          <a class="a-tag" href="contact.html">Contact</a>
-          <a class="a-tag" href="blog.html">Blog</a>
+          <a class="a-tag" href="kontakt.html">Contact</a>
           <a class="a-tag" href="about.html">Om Mig</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -70,53 +64,102 @@
           <i class="fa fa-bars"></i>
         </a>
       </div>
-      
     </header>
 
-    <main>
-      <section class="section-cta">
-        <div class="container">
-          <div class="cta">
-            <div class="cta-text-box">
-              <h2 class="heading-secondary">Welcome!</h2>
-              <p class="cta-text">
-                Don't forget to sign up!
-              </p>
-              <form class="cta-form" action="#">
-                <div>
-                  <label for="full-name">Full Name</label>
-                  <input id="full-name" type="text" placeholder="Your Name" required/>
-                </div>
+    <section class="blog-section">
+      <div class="blog-div-ett">
+        
+        <a href="griden.html">
+          <img class="motivated-img" src="img/computer.webp" alt="guy on his computer">
+        </a>
+          <h2>How to stay motivated</h2>
+          <p>Many people quit coding and it’s very obvious <br>why they do that, the reasons can vary, 
+            continue reading this <br> article and find out why so many people quit.....</p>
+          <a class="read-more" href="griden.html">Read More</a>
+        <p class="datum">2021-09-23</p>
+      </div>
 
-                <div>
-                  <label for="email">Your Email</label>
-                  <input id="email" type="email" placeholder="Email" required />
-                </div>
+      <div class="grid-child">
+        <aside class="aside">
+          <h4>Related posts</h4>
+  
+          <ul class="related-bottom">
+            <li class="li-related-bottom">
+              <a href="griden.html">
 
-                <div>
-                  <label for="select-where" required>Where did you hear from us?</label>
-                  <select id="select-where">
-                    <option value"">Please choose one option:</option>
-                    <option value="friends">Friends and family</option>
-                    <option value="youtue">Youtube video</option>
-                  </select>
-                </div>
+                <img
+                src="img/related-1.jpg"
+                alt="Person programming"
+                width="175"
+                height="175"
+                />
+              </a>
+              
+                <a class="a-class-bottom" href="griden.html">How to Learn Web Development</a>
+              <p class="related-author">SEP 09, 2021</p>
+            </li>
+            <li class="li-related-bottom">
+              <a class="griden.html">
 
-                <button class="btn btn--form">Sign me up</button>
-                <!-- <input type="checkbox" />
-                <input type="number"> -->
-              </form>
-            </div>
+                <img
+                src="img/plant.webp"
+                alt="Lightning"
+                width="175"
+                height="175"
+                />
+              </a>
+              <a class="a-class-bottom" href="griden.html">How to Learn CSS</a>
+              <p class="related-author">AUG 14, 2021</p>
+            </li>
+            <li class="li-related-bottom">
+              <a href="griden.html">
 
-            <div
-              class="cta-img-box"
-              role="img"
-              aria-label="Some Stuff"
-            ></div>
-          </div>
-        </div>
-      </section>
-    </main>
+                <img
+                src="img/related-3.jpg"
+                alt="JavaScript code on a screen"
+                width="175"
+                height="175"
+                />
+              </a>
+              <span class="span"> <a class="a-class-bottom" href="griden.html">Why learn JavaScript?</a></span>
+              <p class="related-author">JUNE 26, 2021</p>
+            </li>
+
+    
+          </ul>
+        </aside>
+
+      </div>
+     
+
+      <div class="blog-div-två">
+        <a href="griden.html">
+        <img src="img/related-2.jpg" alt="guy on his computer">
+        </a>
+        <h2>How to Learn Web Development</h2>
+        <p>Many people quit coding and it’s very obvious <br>why they do that, the reasons can vary, 
+          continue reading this <br> article and find out why so many people quit.....</p>
+        <a class="read-more" href="griden.html">Read More</a>
+        <p class="datum">2021-09-20</p>
+      </div>
+
+      
+      <div class="blog-div-tre">
+        <a href="griden.html">
+          <img src="img/related-3.jpg" alt="guy on his computer">
+        </a>
+        <h2>How to Learn Web Development</h2>
+        <p>Many people quit coding and it’s very obvious <br>why they do that, the reasons can vary, 
+          continue reading this <br> article and find out why so many people quit.....</p>
+          <a class="read-more" href="griden.html">Read More</a>
+        <p class="datum">2021-09-16</p>
+      </div>
+
+
+
+    </section>
+
+
 
     <footer class="footer">
       <div class="container grid grid--footer">

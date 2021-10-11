@@ -1,0 +1,530 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  font-family: "Rubik", sans-serif;
+}
+/* HEADER */
+
+.header-main {
+  border-top: 10px solid orange;
+  width: 100%;
+
+  height: fit-content;
+  margin-bottom: 0.8rem;
+}
+
+.ul-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: ;
+  position: relative;
+}
+
+.swedbank-logo {
+  position: absolute;
+  max-height: 42px;
+  max-width: 100%;
+  display: block;
+  margin-left: 0.5rem;
+}
+
+li {
+  display: inline;
+}
+
+.div-ett {
+  display: flex;
+  align-items: center;
+}
+
+.div-två {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  gap: 1.2rem;
+  margin: 0 1.2rem;
+}
+
+.a-main {
+  color: #257886;
+  font-family: SwedbankSansMedium, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.a-bottom {
+  padding: 1.2rem 2.4rem;
+  /* border-radius: 9px; */
+  color: #fff;
+  background-color: #ee7023;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  padding: 0.7rem;
+}
+/* ******************************* */
+/* bottom Navigation */
+/* ******************************* */
+
+.home-btn {
+  border-bottom: 5px solid #f90;
+  width: 2.4rem;
+  height: 1.2rem;
+  padding: 0.3rem;
+  margin-left: 0.5rem;
+}
+
+.nav-main-below {
+  width: 100%;
+  background-color: #fbf2ea;
+}
+
+.ul-main-below {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 45px;
+  position: relative;
+}
+
+.swedbank-logo {
+  position: absolute;
+  max-height: 42px;
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  display: inline;
+}
+
+.div-tre {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.div-fyra {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  gap: 1.2rem;
+  margin: 0 1.2rem;
+}
+
+.a-main-två {
+  text-decoration: none;
+  color: #777;
+}
+
+.a-bottom-två {
+  text-decoration: none;
+  color: #777;
+}
+
+.a-klass {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.6875rem;
+  position: relative;
+  padding: 0 16px;
+  color: #555;
+  text-decoration: none;
+}
+
+.arrow {
+  top: 20%;
+}
+
+.margin-left-right {
+  margin: 0 26rem;
+}
+
+/* ******************************* */
+/* HERO SECTION */
+/* ******************************* */
+
+.section-hero {
+  height: 300px;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 300px;
+  background-color: #fbf2ea;
+}
+
+.container-ett {
+  width: 100%;
+  height: 100%;
+  padding: 28px;
+}
+
+.container-två {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+h1 {
+  color: #f35b1c;
+  font-family: SwedbankHeadlineBlack, Arial, sans-serif;
+  color: #f35b1c;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+p {
+  color: #555;
+  margin-bottom: 1.2rem;
+}
+
+.container-ett > a {
+  color: #257886;
+  font-weight: bold;
+}
+
+.arrow-right {
+  color: #257886;
+}
+
+.margin-left-right > h2 {
+  margin-top: 1.2rem;
+}
+
+.aktuellt {
+  border-bottom: 2px solid #ebe7e2;
+  margin-bottom: 1.2rem;
+}
+
+/* ******************************* */
+/* GRID-Col-3 SECTION */
+/* ******************************* */
+
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  height: 400px;
+  column-gap: 1.2rem;
+  margin-bottom: 8.6rem;
+}
+
+.första-bild {
+  width: 100%;
+}
+
+.h2-koll {
+  color: #f35b1c;
+  margin-bottom: 1.2rem;
+  color: #f35b1c;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.arrow-right-två {
+  font-size: 1.9rem;
+  color: #257886;
+}
+
+.aktuell-länk {
+  vertical-align: 8.1px;
+  color: #257886;
+}
+
+.info-box-ett {
+  padding: 1.2rem;
+}
+
+.h2-nyinflyttad {
+  color: #f35b1c;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* ******************************* */
+/* GRID-Col-5 SECTION */
+/* ******************************* */
+
+.multiple-link-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: 70% 30%;
+  height: 200px;
+  margin-bottom: 3.2rem;
+  background-color: #fbf2ea;
+  padding-left: 2rem;
+  column-gap: 1.2rem;
+}
+
+.multiple-link-list:last-child {
+  background-color: #fbf2ea;
+}
+
+.li-betala {
+  display: block;
+}
+
+.border-radius-linje {
+  border: 2px solid #257886;
+}
+
+.ul-betala {
+  margin-top: 1.2rem;
+}
+
+.privat {
+  grid-row: 2 / 2;
+  grid-column: 1 / span 4;
+  border-top: 3px solid #ebe7e2;
+  padding: 0.5rem;
+}
+
+.div-betala {
+  height: fit-content;
+}
+
+.border-radius-grön {
+  border: 2px solid #31a3ae;
+}
+
+.border-radius-gul {
+  border: 2px solid #fdc129;
+}
+
+.border-radius-rosa {
+  border: 2px solid #db4d8d;
+}
+
+.border-radius-företag {
+  border: 2px solid #d4b8a3;
+}
+
+.företag {
+  color: #ee7023;
+}
+
+.linje-företag {
+  border-top: 2px solid #ebe7e2;
+  padding: 0.5rem;
+}
+
+.privat {
+  color: #257886;
+  font-weight: bold;
+}
+
+.företag-blå {
+  color: #257886;
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+
+.background {
+  background-color: #fff8f2;
+  padding-left: 0.5rem;
+}
+
+.bet {
+  padding-top: 1.2rem;
+}
+
+/*********************/
+/*  Mugera   */
+/*********************/
+
+.m1 {
+  background-color: #ebf8f2;
+  width: 100%;
+  padding: 1rem;
+}
+
+.m2 {
+  background-color: #ebf8f2;
+  width: 100%;
+  padding: 1rem;
+}
+
+.m3 {
+  background-color: #ebf8f2;
+  width: 100%;
+  padding: 1rem;
+}
+
+.grid-col-555 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+
+  height: 200px;
+  margin-bottom: 9.6rem;
+}
+
+.orange {
+  color: #f35b1c;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.brown {
+  color: #512b2b;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.coronatext {
+  margin-top: 0.5rem;
+}
+
+.tipsp {
+  color: #257886;
+}
+
+.tipsf {
+  display: block;
+  color: #257886;
+}
+
+.dÃ¤rfÃ¶r {
+  color: #512b2b;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.lagen {
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+.dÃ¤rfÃ¶rstÃ¤llervifrÃ¥gor {
+  color: #257886;
+}
+
+.hÃ¥llbara {
+  color: #512b2b;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.vijobbar {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.hÃ¥llbarhet {
+  color: #257886;
+}
+
+.footer {
+  width: 100%;
+  height: 350px;
+  border-top: 10px solid orange;
+  background-color: #fbf2ea;
+}
+
+.grid-col-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  height: 400px;
+  width: 100%;
+
+  column-gap: 1.2rem;
+  padding: 1rem;
+}
+
+.li-class {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  padding: 0.3rem 0;
+}
+
+.span-class {
+  display: inline-block;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  margin-bottom: 1.2rem;
+}
+
+.select-where {
+  padding-left: 2rem;
+  margin-: 2rem;
+}
+
+.span-class-två {
+  display: inline-block;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+/*********************/
+/*  Senavere  */
+/*********************/
+
+.kontaktaoss {
+  color: #257886;
+  vertical-align: 3px;
+}
+.sidenote-privatlan {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  color: #767676;
+}
+.grid-col-6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  height: 330px;
+  column-gap: 1.2rem;
+  margin-bottom: 8.6rem;
+}
+.bedrageri {
+  background-color: #fbf2ea;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 24px;
+  margin-bottom: 1.5rem;
+  font-family: Arial, sans-serif;
+}
+.bedrageri > H1 {
+  color: #f35b1c;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}

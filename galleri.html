@@ -4,21 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Armin Inc</title>
-  
+    <meta name="description" content="This ultimate guide cover all the important aspects of blogging. Find out how to improve yourself at programming!"/>
+    <title>Galleri</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <script src="script.js"></script>
-  
-  
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -28,17 +29,12 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
 
-  
     <script
       defer
       src="// https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
     "
     ></script>
-
-
-  
   </head>
-
   <body>
     <header class="header">
       <a href="index.html">
@@ -46,22 +42,18 @@
         <img class="logo" src="logo.png" alt="some logo"/>
       </a>
       <nav class="main-nav">
-      <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="galleri.html">Galleri</a></li>
+        <ul class="main-nav-list">
           <li><a class="main-nav-link" href="kontakt.html">Contact</a></li>
           <li><a class="main-nav-link" href="blog.html">Blog</a></li>
           <li><a class="main-nav-link" href="about.html">Om Mig</a></li>
-      
-      
-        </ul>        
+        </ul>
       </nav>
 
       <div class="topnav">
         <a href="#home" class="active"></a>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-          <a class="a-tag" href="galleri.html">Galleri</a>
-          <a class="a-tag" href="contact.html">Contact</a>
+          <a class="a-tag" href="kontakt.html">Contact</a>
           <a class="a-tag" href="blog.html">Blog</a>
           <a class="a-tag" href="about.html">Om Mig</a>
         </div>
@@ -70,53 +62,42 @@
           <i class="fa fa-bars"></i>
         </a>
       </div>
-      
     </header>
 
-    <main>
-      <section class="section-cta">
-        <div class="container">
-          <div class="cta">
-            <div class="cta-text-box">
-              <h2 class="heading-secondary">Welcome!</h2>
-              <p class="cta-text">
-                Don't forget to sign up!
-              </p>
-              <form class="cta-form" action="#">
-                <div>
-                  <label for="full-name">Full Name</label>
-                  <input id="full-name" type="text" placeholder="Your Name" required/>
-                </div>
-
-                <div>
-                  <label for="email">Your Email</label>
-                  <input id="email" type="email" placeholder="Email" required />
-                </div>
-
-                <div>
-                  <label for="select-where" required>Where did you hear from us?</label>
-                  <select id="select-where">
-                    <option value"">Please choose one option:</option>
-                    <option value="friends">Friends and family</option>
-                    <option value="youtue">Youtube video</option>
-                  </select>
-                </div>
-
-                <button class="btn btn--form">Sign me up</button>
-                <!-- <input type="checkbox" />
-                <input type="number"> -->
-              </form>
-            </div>
-
-            <div
-              class="cta-img-box"
-              role="img"
-              aria-label="Some Stuff"
-            ></div>
-          </div>
+    <section class="galleri-section">
+      <h2 class="h2-galleri">Galleri</h2>
+      <div class="galleri-grid">
+        <div>
+          <img class="img-galleri" src="img/bork.webp" alt="I telefonen" />
         </div>
-      </section>
-    </main>
+        <div>
+          <img class="img-galleri" src="img/computer.webp" alt="Vid datorn" />
+        </div>
+        <div>
+          <img class="img-galleri" src="img/gate.webp" alt="En stor dörr" />
+        </div>
+        <div>
+          <img class="img-galleri" src="img/joshua.webp" alt="datorer" />
+        </div>
+        <div><img class="img-galleri" src="img/plant.webp" alt="växter" /></div>
+        <div>
+          <img
+            class="img-galleri"
+            src="img/related-1.jpg"
+            alt="En person som kodar"
+          />
+        </div>
+        <div>
+          <img class="img-galleri" src="img/related-2.jpg" alt="Thunder" />
+        </div>
+        <div>
+          <img class="img-galleri" src="img/related-3.jpg" alt="some coding" />
+        </div>
+        <div>
+          <img class="img-galleri" src="img/skog.jpg" alt="Some calm road" />
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="container grid grid--footer">
