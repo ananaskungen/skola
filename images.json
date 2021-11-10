@@ -1,64 +1,64 @@
 [
   {
     "title": "Bild-1",
-    "description": "En bild",
+    "description": "A man in an office talking to someone on a phone",
     "url": "/img/bork.webp",
-    "alt": "har inget o säga atm"
+    "alt": "Talking on a phone"
   },
 
   {
     "title": "Bild-2",
-    "description": "En annan bild",
+    "description": "Trying to figure out what to write",
     "url": "/img/computer.webp",
-    "alt": "En person som är vid datorn"
+    "alt": "Looking down on your desk"
   },
 
   {
     "title": "Bild-3",
-    "description": "En bild",
+    "description": "A very fancy gate from the early days",
     "url": "/img/gate.webp",
-    "alt": "har inget o säga atm"
+    "alt": "Very decorative gate with beautiful reliefs."
   },
 
   {
     "title": "Bild-4",
-    "description": "En annan bild",
+    "description": "A laptop connected to a bigger monitor",
     "url": "/img/joshua.webp",
-    "alt": "En person som är vid datorn"
+    "alt": "A coding setup with a laptop and a bigger monitor"
   },
 
   {
     "title": "Bild-5",
-    "description": "En bild",
+    "description": "A person holding a plant in it's full growth",
     "url": "/img/plant.webp",
-    "alt": "har inget o säga atm"
+    "alt": "holding a plant"
   },
 
   {
     "title": "Bild-6",
-    "description": "En annan bild",
+    "description": "Some person trying to code ",
     "url": "/img/related-1.jpg",
-    "alt": "En person som är vid datorn"
+    "alt": "A person starring into the laptop"
   },
 
   {
     "title": "Bild-7",
-    "description": "En annan bild",
+    "description": "Thunderbolts striking down on earth",
     "url": "/img/related-2.jpg",
-    "alt": "En person som är vid datorn"
+    "alt": "Fascinating thunderbolts"
   },
 
   {
     "title": "Bild-8",
-    "description": "En bild",
+    "description": "Some very interesting javascript code",
     "url": "/img/related-3.jpg",
-    "alt": "har inget o säga atm"
+    "alt": "Javascript code"
   },
 
   {
     "title": "Bild-9",
-    "description": "En annan bild",
+    "description": "a neighbourhood in nothern mexico",
     "url": "/img/skog.jpg",
-    "alt": "En person som är vid datorn"
+    "alt": "A lot of vegetation and properties around the image with a cozy road"
   }
 ]
