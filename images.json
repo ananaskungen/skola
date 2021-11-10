@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Bild-1",
+    "description": "En bild",
+    "url": "/img/bork.webp",
+    "alt": "har inget o säga atm"
+  },
+
+  {
+    "title": "Bild-2",
+    "description": "En annan bild",
+    "url": "/img/computer.webp",
+    "alt": "En person som är vid datorn"
+  },
+
+  {
+    "title": "Bild-3",
+    "description": "En bild",
+    "url": "/img/gate.webp",
+    "alt": "har inget o säga atm"
+  },
+
+  {
+    "title": "Bild-4",
+    "description": "En annan bild",
+    "url": "/img/joshua.webp",
+    "alt": "En person som är vid datorn"
+  },
+
+  {
+    "title": "Bild-5",
+    "description": "En bild",
+    "url": "/img/plant.webp",
+    "alt": "har inget o säga atm"
+  },
+
+  {
+    "title": "Bild-6",
+    "description": "En annan bild",
+    "url": "/img/related-1.jpg",
+    "alt": "En person som är vid datorn"
+  },
+
+  {
+    "title": "Bild-7",
+    "description": "En annan bild",
+    "url": "/img/related-2.jpg",
+    "alt": "En person som är vid datorn"
+  },
+
+  {
+    "title": "Bild-8",
+    "description": "En bild",
+    "url": "/img/related-3.jpg",
+    "alt": "har inget o säga atm"
+  },
+
+  {
+    "title": "Bild-9",
+    "description": "En annan bild",
+    "url": "/img/skog.jpg",
+    "alt": "En person som är vid datorn"
+  }
+]

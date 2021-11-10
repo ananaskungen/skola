@@ -560,6 +560,16 @@ body {
 /* Galleri.html */
 /*****************************/
 
+img {
+  margin: 3rem;
+}
+
+.imageContainer {
+  border: 1px solid red;
+  margin: 2rem 5rem 10rem 5rem;
+  padding: 1.5rem;
+}
+
 .galleri-section {
   height: fit-content;
   background-color: #fdf2e9;
