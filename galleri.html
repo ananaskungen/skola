@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This ultimate guide cover all the important aspects of blogging. Find out how to improve yourself at programming!"/>
+    <meta
+      name="description"
+      content="This ultimate guide cover all the important aspects of blogging. Find out how to improve yourself at programming!"
+    />
     <title>Galleri</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -34,12 +37,14 @@
       src="// https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
     "
     ></script>
+
+    <script src="app.js" defer></script>
   </head>
   <body>
+    
     <header class="header">
       <a href="index.html">
-
-        <img class="logo" src="logo.png" alt="some logo"/>
+        <img class="logo" src="logo.png" alt="some logo" />
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -64,97 +69,278 @@
       </div>
     </header>
 
-    <section class="galleri-section">
-      <h2 class="h2-galleri">Galleri</h2>
-      <div class="galleri-grid">
-        <div>
-          <img class="img-galleri" src="img/bork.webp" alt="I telefonen" />
-        </div>
-        <div>
-          <img class="img-galleri" src="img/computer.webp" alt="Vid datorn" />
-        </div>
-        <div>
-          <img class="img-galleri" src="img/gate.webp" alt="En stor dörr" />
-        </div>
-        <div>
-          <img class="img-galleri" src="img/joshua.webp" alt="datorer" />
-        </div>
-        <div><img class="img-galleri" src="img/plant.webp" alt="växter" /></div>
-        <div>
-          <img
-            class="img-galleri"
-            src="img/related-1.jpg"
-            alt="En person som kodar"
-          />
-        </div>
-        <div>
-          <img class="img-galleri" src="img/related-2.jpg" alt="Thunder" />
-        </div>
-        <div>
-          <img class="img-galleri" src="img/related-3.jpg" alt="some coding" />
-        </div>
-        <div>
-          <img class="img-galleri" src="img/skog.jpg" alt="Some calm road" />
-        </div>
-      </div>
-    </section>
 
-    <footer class="footer">
-      <div class="container grid grid--footer">
-        <div class="logo-col"><a href="#" class="footer-logo"> 
-          <img class="logo" alt="Armins logo" src="logo.png" />
-        </a>
+      <!-- Första Modal Bilden -->
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>Popup image</h1>
+      <img  width="500" height="500" id="unsplashImageR" alt=""/>
+    </div>
 
-        <ul class="social-links">
-          <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a></li>
-          <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a></li>
-          <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a></li>
-        </ul>
+    <!-- andra modal bilden -->
+    <div class="modale hidden">
+      <button class="close-modale">&times;</button>
+      <h1>Popup image</h1>
+      <img  width="500" height="500" id="unsplashImage-11" alt="" />
+    </div>
 
-        <p class="copyright">Copyright &copy; 2027 by Armin, Inc. All rights reserved. </p>
+    <!-- Tredje modal bilden -->
+    <div class="modalen hidden">
+      <button class="close-modalen">&times;</button>
+      <h1>Popup image</h1>
+      <img  width="500" height="500" id="unsplashImage-22" alt="" />
+    </div>
+
+    <!-- Fjärde modal bilden -->
+    <div class="modalens hidden">
+      <button class="close-modalens">&times;</button>
+      <h1>Popup image</h1>
+      <img  width="500" height="500" id="unsplashImage-33" alt="" />
+    </div>
+    
+    <!-- Buttons med bilder -->
+    <div class="overlay hidden"></div>
+
+    <h1>Gallery</h1>
+    <div class="imageContainer">
+        <button class="show-modal">
+          <img  width="300" height="300" id="unsplashImage" alt=""/>
+        </button>
         
-        </div>
-        <div class="address-col">
-          <p class="footer-heading">Contact us</p>
-          <address class="contacts" >
-            <p class="address">
-              Address: 48 Tribecca St., 2nd Floor, New York, NY 13337
-            </p>
-            <p>
-              <a class="footer-link" href="tel:415-137-1337">415-137-1337</a><br/>
-              <a class="footer-link" href="mailto:"test@armin.com">test@armin.com</a>
-            </p>
-            
-          </address>
-        </div>
-        <nav class="nav-col">
-          <p class="footer-heading">Account</p>
-          <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Create account</a></li>
-            <li><a class="footer-link" href="#">Sign in</a></li>
-            <li><a class="footer-link" href="#">iOS app</a></li>
-            <li><a class="footer-link" href="#">Android app</a></li>
-          </ul>   
-        </nav>
+        <button class="show-modal-1">
+          <img  width="300" height="300" id="unsplashImage-1" alt="" />
+        </button>
 
-        <nav class="nav-col">
-          <p class="footer-heading">Company</p>
-          <ul class="footer-nav">
-            <li><a class="footer-link" href="#">About Armin Inc</a></li>
-            <li><a class="footer-link" href="#">For Business</a></li>
-            <li><a class="footer-link" href="#">Careers</a></li>
-          </ul>   
-        </nav>
+        <button class="show-modal-2">
+          <img  width="300" height="300" id="unsplashImage-2" alt="" />
+        </button>
 
-        <nav class="nav-col">
-          <p class="footer-heading">Resources</p>
-          <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Help center</a></li>
-            <li><a class="footer-link" href="#">Privacy & terms</a></li>
-          </ul>   
-        </nav>
+        <button class="show-modal-3">
+          <img  width="300" height="300" id="unsplashImage-3" alt="" />    
+        </button>
+    </div>
+      
+      <footer class="footer">
+        <div class="container grid grid--footer">
+          <div class="logo-col"><a href="#" class="footer-logo"> 
+            <img class="logo" alt="Armins logo" src="logo.png" />
+          </a>
+    
+          <ul class="social-links">
+            <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a></li>
+            <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a></li>
+            <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a></li>
+          </ul>
+    
+          <p class="copyright">Copyright &copy; 2027 by Armin, Inc. All rights reserved. </p>
+          
+          </div>
+          <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts" >
+              <p class="address">
+                Address: 48 Tribecca St., 2nd Floor, New York, NY 13337
+              </p>
+              <p>
+                <a class="footer-link" href="tel:415-137-1337">415-137-1337</a><br/>
+                <a class="footer-link" href="mailto:"test@armin.com">test@armin.com</a>
+              </p>
+              
+            </address>
+          </div>
+          <nav class="nav-col">
+            <p class="footer-heading">Account</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Create account</a></li>
+              <li><a class="footer-link" href="#">Sign in</a></li>
+              <li><a class="footer-link" href="#">iOS app</a></li>
+              <li><a class="footer-link" href="#">Android app</a></li>
+            </ul>   
+          </nav>
+    
+          <nav class="nav-col">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">About Armin Inc</a></li>
+              <li><a class="footer-link" href="#">For Business</a></li>
+              <li><a class="footer-link" href="#">Careers</a></li>
+            </ul>   
+          </nav>
+    
+          <nav class="nav-col">
+            <p class="footer-heading">Resources</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Help center</a></li>
+              <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            </ul>   
+          </nav>
+        </div>
+
+
+    <script>
+      let imageLink = document.querySelector("#imageLink"); 
+      let imageElement = document.querySelector("#unsplashImage");
+      let imageElemente = document.querySelector("#unsplashImageR");
+      let imageLink2 = document.querySelector("#unsplashImage-1"); 
+      let imageLink3 = document.querySelector("#unsplashImage-2"); 
+      let imageLink4 = document.querySelector("#unsplashImage-3"); 
+
+      //bild-1
+      const modal = document.querySelector('.modal');
+      const overlay = document.querySelector('.overlay');
+      const btnCloseModal = document.querySelector('.close-modal');
+      const btnsOpenModal = document.querySelectorAll('.show-modal');
+
+      const openModal = function () {
+        modal.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+      };
+
+      const closeModal = function () {
+        modal.classList.add('hidden');
+        overlay.classList.add('hidden');
+      };
+
+      for (let i = 0; i < btnsOpenModal.length; i++)
+        btnsOpenModal[i].addEventListener('click', openModal);
+
+      btnCloseModal.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      document.addEventListener('keydown', function (e) {
+        // console.log(e.key);
+
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeModal();
+        }
+      });
+
+      // bild 2
+      let imageElemente2 = document.querySelector("#unsplashImage-11");
+      const modale = document.querySelector('.modale');
+      const overlaye = document.querySelector('.overlay');
+      const btnCloseModale = document.querySelector('.close-modale');
+      const btnsOpenModale = document.querySelectorAll('.show-modal-1');
+
+      const openModale = function () {
+        modale.classList.remove('hidden');
+        overlaye.classList.remove('hidden');
+      };
+
+      const closeModale = function () {
+        modale.classList.add('hidden');
+        overlaye.classList.add('hidden');
+      };
+
+      for (let i = 0; i < btnsOpenModale.length; i++)
+        btnsOpenModale[i].addEventListener('click', openModale);
+
+      btnCloseModale.addEventListener('click', closeModale);
+      overlaye.addEventListener('click', closeModale);
+
+      document.addEventListener('keydown', function (e) {
+        // console.log(e.key);
+
+        if (e.key === 'Escape' && !modale.classList.contains('hidden')) {
+          closeModale();
+        }
+      });
+
+
+      // Bild 3
+      let imageElemente3 = document.querySelector("#unsplashImage-22");
+      const modalen = document.querySelector('.modalen');
+      const overlayen = document.querySelector('.overlay');
+      const btnCloseModalen = document.querySelector('.close-modalen');
+      const btnsOpenModalen = document.querySelectorAll('.show-modal-2');
+
+      const openModalen = function () {
+        modalen.classList.remove('hidden');
+        overlayen.classList.remove('hidden');
+      };
+
+      const closeModalen = function () {
+        modalen.classList.add('hidden');
+        overlayen.classList.add('hidden');
+      };
+
+      for (let i = 0; i < btnsOpenModalen.length; i++)
+        btnsOpenModalen[i].addEventListener('click', openModalen);
+
+      btnCloseModalen.addEventListener('click', closeModalen);
+      overlayen.addEventListener('click', closeModalen);
+
+      document.addEventListener('keydown', function (e) {
+        // console.log(e.key);
+
+        if (e.key === 'Escape' && !modalen.classList.contains('hidden')) {
+          closeModalen();
+        }
+      });
+
+       // Bild 4
+      let imageElemente4 = document.querySelector("#unsplashImage-33");
+      const modalens = document.querySelector('.modalens');
+      const overlayens = document.querySelector('.overlay');
+      const btnCloseModalens = document.querySelector('.close-modalens');
+      const btnsOpenModalens = document.querySelectorAll('.show-modal-3');
+
+      const openModalens = function () {
+        modalens.classList.remove('hidden');
+        overlayens.classList.remove('hidden');
+      };
+
+      const closeModalens = function () {
+        modalens.classList.add('hidden');
+        overlayens.classList.add('hidden');
+      };
+
+  
+      for (let i = 0; i < btnsOpenModalens.length; i++)
+        btnsOpenModalens[i].addEventListener('click', openModalens);
+
+      btnCloseModalens.addEventListener('click', closeModalens);
+      overlayens.addEventListener('click', closeModalens);
+
+      document.addEventListener('keydown', function (e) {
+        // console.log(e.key);
+
+        if (e.key === 'Escape' && !modalens.classList.contains('hidden')) {
+          closeModalens();
+        }
+      });
+      
+  
+      fetch("http://127.0.0.1:8080/images.json")
+        .then(response => response.json())
+        .then(data => {
+          console.log(data[0].url);
+          console.log(data);
+
+          imageElement.src = data[0].url 
+          imageElemente.src = data[0].url 
+          imageElement.alt = data[0].alt
+          imageElement.title = data[0].title
+
+          imageLink2.src = data[1].url
+          imageElemente2.src = data[1].url
+          imageLink2.alt = data[1].alt
+          imageLink2.title = data[1].title
+
+          imageLink3.src = data[2].url
+          imageElemente3.src = data[2].url
+          imageLink3.alt = data[2].alt
+          imageLink3.title = data[2].title
+
+          imageLink4.src = data[3].url
+          imageElemente4.src = data[3].url
+          imageLink4.alt = data[3].alt
+          imageLink4.title = data[3].title
+
+        });
+        console.log(imageElement);
+       
         
-      </div>
-    </footer>
+    </script>
   </body>
 </html>

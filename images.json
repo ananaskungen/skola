@@ -53,12 +53,5 @@
     "description": "Some very interesting javascript code",
     "url": "/img/related-3.jpg",
     "alt": "Javascript code"
-  },
-
-  {
-    "title": "Bild-9",
-    "description": "a neighbourhood in nothern mexico",
-    "url": "/img/skog.jpg",
-    "alt": "A lot of vegetation and properties around the image with a cozy road"
   }
 ]
