@@ -74,6 +74,7 @@
     <div class="modal hidden">
       <button class="close-modal">&times;</button>
       <h1>Popup image</h1>
+      <p class="pTagg">hej hej hej</p>
       <img  width="500" height="500" id="unsplashImageR" alt=""/>
     </div>
 
@@ -101,24 +102,28 @@
     <!-- Buttons med bilder -->
     <div class="overlay hidden"></div>
 
-    <h1>Gallery</h1>
+    <h1 class="gallery-h1">Gallery</h1>
+    
+    
     <div class="imageContainer">
-        <button class="show-modal">
-          <img  width="300" height="300" id="unsplashImage" alt=""/>
-        </button>
-        
-        <button class="show-modal-1">
-          <img  width="300" height="300" id="unsplashImage-1" alt="" />
-        </button>
-
-        <button class="show-modal-2">
-          <img  width="300" height="300" id="unsplashImage-2" alt="" />
-        </button>
-
-        <button class="show-modal-3">
-          <img  width="300" height="300" id="unsplashImage-3" alt="" />    
-        </button>
+      <button class="show-modal">
+        <img  width="300" height="300" id="unsplashImage" alt=""/>
+      </button>
+      
+      <button class="show-modal-1">
+        <img  width="300" height="300" id="unsplashImage-1" alt="" />
+      </button>
+      
+      <button class="show-modal-2">
+        <img  width="300" height="300" id="unsplashImage-2" alt="" />
+      </button>
+      
+      <button class="show-modal-3">
+        <img  width="300" height="300" id="unsplashImage-3" alt="" />    
+      </button>
     </div>
+    <div id="myData"></div>
+    <div id="myDataTvå"></div>
       
       <footer class="footer">
         <div class="container grid grid--footer">
@@ -179,13 +184,13 @@
 
     <script>
       let imageLink = document.querySelector("#imageLink"); 
-      let imageElement = document.querySelector("#unsplashImage");
-      let imageElemente = document.querySelector("#unsplashImageR");
       let imageLink2 = document.querySelector("#unsplashImage-1"); 
       let imageLink3 = document.querySelector("#unsplashImage-2"); 
       let imageLink4 = document.querySelector("#unsplashImage-3"); 
 
       //bild-1
+      let imageElement = document.querySelector("#unsplashImage");
+      let imageElemente = document.querySelector("#unsplashImageR");
       const modal = document.querySelector('.modal');
       const overlay = document.querySelector('.overlay');
       const btnCloseModal = document.querySelector('.close-modal');
@@ -311,11 +316,13 @@
       });
       
   
-      fetch("http://127.0.0.1:8080/images.json")
+      fetch("images.json")
         .then(response => response.json())
         .then(data => {
           console.log(data[0].url);
           console.log(data);
+          appendData(data)
+
 
           imageElement.src = data[0].url 
           imageElemente.src = data[0].url 
@@ -336,9 +343,18 @@
           imageElemente4.src = data[3].url
           imageLink4.alt = data[3].alt
           imageLink4.title = data[3].title
+          
+          function appendData(data) {
+            let mainContainer = document.getElementById("myData");
+            for (let i = 0; i < data.length; i++) {
+              let div = document.createElement("div");
+              div.innerHTML = 'Title: ' + data[i].title + '<br> Alt-Text: ' + data[i].alt;
+              mainContainer.appendChild(div);           
+            }
+          }
 
         });
-        console.log(imageElement);
+      
        
         
     </script>
