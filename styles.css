@@ -509,10 +509,6 @@ body {
     background-color: black;
     color: white;
   }
-
-  /* Style the active link (or home/logo) */
-  .active {
-  }
 }
 
 @media (max-width: 600px) {

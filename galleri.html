@@ -74,29 +74,32 @@
     <div class="modal hidden">
       <button class="close-modal">&times;</button>
       <h1>Popup image</h1>
-      <p class="pTagg">hej hej hej</p>
-      <img  width="500" height="500" id="unsplashImageR" alt=""/>
+      <img  width="500" height="500" id="unsplashImageR" alt="" description=""/>
+      <p id="pTagg"></p>
     </div>
 
     <!-- andra modal bilden -->
     <div class="modale hidden">
       <button class="close-modale">&times;</button>
       <h1>Popup image</h1>
-      <img  width="500" height="500" id="unsplashImage-11" alt="" />
+      <img  width="500" height="500" id="unsplashImage-11" alt="" description=""/>
+      <p id="pTagg-Ett"></p>
     </div>
 
     <!-- Tredje modal bilden -->
     <div class="modalen hidden">
       <button class="close-modalen">&times;</button>
       <h1>Popup image</h1>
-      <img  width="500" height="500" id="unsplashImage-22" alt="" />
+      <img  width="500" height="500" id="unsplashImage-22" alt="" description=""/>
+      <p id="pTagg-två"></p>
     </div>
 
     <!-- Fjärde modal bilden -->
     <div class="modalens hidden">
       <button class="close-modalens">&times;</button>
       <h1>Popup image</h1>
-      <img  width="500" height="500" id="unsplashImage-33" alt="" />
+      <img  width="500" height="500" id="unsplashImage-33" alt="" description=""/>
+      <p id="pTagg-tre"></p>
     </div>
     
     <!-- Buttons med bilder -->
@@ -107,19 +110,19 @@
     
     <div class="imageContainer">
       <button class="show-modal">
-        <img  width="300" height="300" id="unsplashImage" alt=""/>
+        <img  width="300" height="300" id="unsplashImage" alt="" description=""/>
       </button>
       
       <button class="show-modal-1">
-        <img  width="300" height="300" id="unsplashImage-1" alt="" />
+        <img  width="300" height="300" id="unsplashImage-1" alt="" description="" />
       </button>
       
       <button class="show-modal-2">
-        <img  width="300" height="300" id="unsplashImage-2" alt="" />
+        <img  width="300" height="300" id="unsplashImage-2" alt="" description="" />
       </button>
       
       <button class="show-modal-3">
-        <img  width="300" height="300" id="unsplashImage-3" alt="" />    
+        <img  width="300" height="300" id="unsplashImage-3" alt="" description=""/>    
       </button>
     </div>
     <div id="myData"></div>
@@ -195,10 +198,15 @@
       const overlay = document.querySelector('.overlay');
       const btnCloseModal = document.querySelector('.close-modal');
       const btnsOpenModal = document.querySelectorAll('.show-modal');
+      let mikko = document.querySelector("#pTagg");
+      let mikko1 = document.querySelector("#pTagg-Ett");
+      let mikko2 = document.querySelector("#pTagg-två");
+      let mikko3 = document.querySelector("#pTagg-tre");
+      
 
       const openModal = function () {
         modal.classList.remove('hidden');
-        overlay.classList.remove('hidden');
+        overlay.classList.remove('hidden');  
       };
 
       const closeModal = function () {
@@ -209,10 +217,10 @@
       for (let i = 0; i < btnsOpenModal.length; i++)
         btnsOpenModal[i].addEventListener('click', openModal);
 
-      btnCloseModal.addEventListener('click', closeModal);
-      overlay.addEventListener('click', closeModal);
+        btnCloseModal.addEventListener('click', closeModal);
+        overlay.addEventListener('click', closeModal);
 
-      document.addEventListener('keydown', function (e) {
+        document.addEventListener('keydown', function (e) {
         // console.log(e.key);
 
         if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
@@ -328,9 +336,11 @@
           imageElemente.src = data[0].url 
           imageElement.alt = data[0].alt
           imageElement.title = data[0].title
+          imageElement.description = data[0].description
 
           imageLink2.src = data[1].url
           imageElemente2.src = data[1].url
+          imageElemente2.description = data[1].description
           imageLink2.alt = data[1].alt
           imageLink2.title = data[1].title
 
@@ -338,25 +348,30 @@
           imageElemente3.src = data[2].url
           imageLink3.alt = data[2].alt
           imageLink3.title = data[2].title
+          imageElemente3.description = data[2].description
 
           imageLink4.src = data[3].url
           imageElemente4.src = data[3].url
           imageLink4.alt = data[3].alt
           imageLink4.title = data[3].title
+
+          mikko.innerHTML = data[0].description
+          mikko1.innerHTML = data[1].description
+          mikko2.innerHTML = data[2].description
+          mikko3.innerHTML = data[3].description
           
           function appendData(data) {
             let mainContainer = document.getElementById("myData");
             for (let i = 0; i < data.length; i++) {
               let div = document.createElement("div");
-              div.innerHTML = 'Title: ' + data[i].title + '<br> Alt-Text: ' + data[i].alt;
+              div.innerHTML = 'Title: ' + data[i].title + '<br> Alt-Text: ' + data[i].alt + '<br> Description: ' + data[i].description;
               mainContainer.appendChild(div);           
             }
           }
 
-        });
-      
-       
+         
         
+      });
     </script>
   </body>
 </html>
