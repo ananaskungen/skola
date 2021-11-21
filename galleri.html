@@ -69,16 +69,17 @@
       </div>
     </header>
 
-
-      <!-- Första Modal Bilden -->
+<!-- 
+   
     <div class="modal hidden">
       <button class="close-modal">&times;</button>
+    
       <h1>Popup image</h1>
       <img  width="500" height="500" id="unsplashImageR" alt="" description=""/>
       <p id="pTagg"></p>
     </div>
 
-    <!-- andra modal bilden -->
+
     <div class="modale hidden">
       <button class="close-modale">&times;</button>
       <h1>Popup image</h1>
@@ -86,7 +87,6 @@
       <p id="pTagg-Ett"></p>
     </div>
 
-    <!-- Tredje modal bilden -->
     <div class="modalen hidden">
       <button class="close-modalen">&times;</button>
       <h1>Popup image</h1>
@@ -94,7 +94,7 @@
       <p id="pTagg-två"></p>
     </div>
 
-    <!-- Fjärde modal bilden -->
+   
     <div class="modalens hidden">
       <button class="close-modalens">&times;</button>
       <h1>Popup image</h1>
@@ -102,7 +102,7 @@
       <p id="pTagg-tre"></p>
     </div>
     
-    <!-- Buttons med bilder -->
+    
     <div class="overlay hidden"></div>
 
     <h1 class="gallery-h1">Gallery</h1>
@@ -127,7 +127,17 @@
     </div>
     <div id="myData"></div>
     <div id="myDataTvå"></div>
-      
+  -->
+
+  <div id="popup">
+    <button id="btn">X</button>
+    <img src="" id="image-popup" />
+    <p id="pTaggInner"></p>
+  </div>
+  <div id="container">
+  
+  </div>
+
       <footer class="footer">
         <div class="container grid grid--footer">
           <div class="logo-col"><a href="#" class="footer-logo"> 
@@ -185,6 +195,49 @@
         </div>
 
 
+        <script> 
+        let imageWrap = document.querySelector("#container");
+
+fetch("images.json")
+  .then((response) => response.json())
+  .then((data) => {
+    data.forEach((image) => {
+      let test = document.createElement("img");
+      let pTagg = document.createElement("p");
+      let pTaggAlt = document.createElement("p");
+
+      test.src = image.url;
+      test.alt = image.alt;
+      test.description = image.description;
+      test.dataset.description = image.description;
+      pTagg.innerHTML = image.description;
+      pTaggAlt.innerHTML = image.alt;
+      test.classList = "targetImage";
+
+      imageWrap.appendChild(test);
+      imageWrap.appendChild(pTagg);
+      imageWrap.appendChild(pTaggAlt);
+    });
+  });
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("targetImage")) {
+    let source = e.target.getAttribute("src");
+    let popup = document.querySelector("#popup");
+    popup.style.display = "block";
+    console.log(source);
+    document.querySelector("#image-popup").src = source;
+    let select = document.getElementById("pTaggInner");
+    let hämtaData = e.target.dataset.description;
+    select.innerText = hämtaData;
+  }
+});
+
+btn.onclick = function () {
+  popup.style.display = "none";
+};
+
+        </script>
+<!-- 
     <script>
       let imageLink = document.querySelector("#imageLink"); 
       let imageLink2 = document.querySelector("#unsplashImage-1"); 
@@ -327,8 +380,7 @@
       fetch("images.json")
         .then(response => response.json())
         .then(data => {
-          console.log(data[0].url);
-          console.log(data);
+       
           appendData(data)
 
 
@@ -372,6 +424,6 @@
          
         
       });
-    </script>
+    </script> -->
   </body>
 </html>

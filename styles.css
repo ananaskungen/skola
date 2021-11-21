@@ -562,189 +562,45 @@ body {
   margin-top: 1.2rem;
 }
 
-button {
-  background-color: white;
-  margin: 0.5rem;
-  border: none;
+#container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 5rem;
+  height: 90rem;
+  align-items: center;
 }
 
-img {
-  margin: 1rem 1.5rem 1rem 1.5rem;
-}
-
-.imageContainer {
-  margin: 2rem 5rem 2rem 10rem;
-  padding: 1.5rem;
-}
-
-.galleri-section {
-  height: fit-content;
-  background-color: #fdf2e9;
-  padding: 2rem;
-}
-
-.h2-galleri {
-  font-size: 4rem;
-  text-align: center;
-  margin-bottom: 2.4rem;
-}
-
-.galleri-grid {
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 400px 400px 400px;
-  justify-content: center;
-  height: 100%;
-  gap: 1.8rem;
-  position: relative;
-}
-
-.img-galleri {
-  height: 100%;
-  width: 100%;
-}
-
-.show-modal .show-modal-1 .show-modal-2 .show-modal-3 {
-  font-size: 2rem;
-  font-weight: 600;
-
-  border: none;
-  background-color: #fff;
-  color: #444;
-  border-radius: 10rem;
-  cursor: pointer;
-}
-
-.close-modal {
-  position: absolute;
-  top: 1.2rem;
-  right: 2rem;
-  font-size: 5rem;
-  color: #333;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-.hidden {
+#popup {
   display: none;
 }
 
-.modal {
+#container > img {
+  width: 300px;
+  height: 300px;
+  margin-top: 1rem;
+}
+
+#container > p {
+  margin-top: 1rem;
+}
+
+/* POPUP */
+
+#popup > img {
+  width: 500px;
+  height: 500px;
+  margin-left: 10rem;
+}
+
+#popup > p {
+  margin-left: 1rem;
+}
+
+#btn {
+  width: 100px;
+  height: 100px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-
-  background-color: white;
-  padding: 6rem;
-  border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 10;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 140%;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(3px);
-  z-index: 5;
-}
-
-/* Bild 2 */
-.modale {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-
-  background-color: white;
-  padding: 6rem;
-  border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 10;
-}
-
-.close-modale {
-  position: absolute;
-  top: 1.2rem;
-  right: 2rem;
-  font-size: 5rem;
-  color: #333;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-/* Bild 3 */
-.modalen {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-
-  background-color: white;
-  padding: 6rem;
-  border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 10;
-}
-
-.close-modalen {
-  position: absolute;
-  top: 1.2rem;
-  right: 2rem;
-  font-size: 5rem;
-  color: #333;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-/* Bild 4 */
-.modalens {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-
-  background-color: white;
-  padding: 6rem;
-  border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 10;
-}
-
-.close-modalens {
-  position: absolute;
-  top: 1.2rem;
-  right: 2rem;
-  font-size: 5rem;
-  color: #333;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-/* Title & Alt text */
-#myData {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 7rem;
-  margin-right: 15rem;
-}
-
-#myData > div {
-  font-size: 1rem;
-  height: 10rem;
-  width: 12rem;
+  margin: 1rem;
 }
 
 /****************************/
