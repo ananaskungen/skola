@@ -69,7 +69,7 @@
       </div>
     </header>
 
-<!-- 
+<!-- DETTA ÄR DEN GAMLA VERSIONEN AV MIN SIDA INNAN (LOOP)
    
     <div class="modal hidden">
       <button class="close-modal">&times;</button>
@@ -129,15 +129,16 @@
     <div id="myDataTvå"></div>
   -->
 
+  <!-- DETTA ÄR DEN NYA VERSIONEN AV Galleriet med LOOP. -->
   <div id="popup">
     <button id="btn">X</button>
     <img src="" id="image-popup" />
     <p id="pTaggInner"></p>
   </div>
   <div id="container">
-  
-  </div>
 
+
+  </div>
       <footer class="footer">
         <div class="container grid grid--footer">
           <div class="logo-col"><a href="#" class="footer-logo"> 
@@ -194,9 +195,9 @@
           </nav>
         </div>
 
-
-        <script> 
-        let imageWrap = document.querySelector("#container");
+<!-- DETTA ÄR DET NYA SCRIPTET MED forEach Loopen -->
+<script> 
+let imageWrap = document.querySelector("#container");
 
 fetch("images.json")
   .then((response) => response.json())
@@ -236,8 +237,10 @@ btn.onclick = function () {
   popup.style.display = "none";
 };
 
-        </script>
-<!-- 
+</script>
+
+ <!-- DETTA ÄR DEN GAMLA VERSIONEN UTAN FETCH! -->
+<!--  
     <script>
       let imageLink = document.querySelector("#imageLink"); 
       let imageLink2 = document.querySelector("#unsplashImage-1"); 

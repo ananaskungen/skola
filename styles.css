@@ -572,6 +572,7 @@ body {
 
 #popup {
   display: none;
+  position: fixed;
 }
 
 #container > img {
